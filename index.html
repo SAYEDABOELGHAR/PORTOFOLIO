@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -11,9 +10,10 @@
     nav a { margin: 0 10px; color: white; text-decoration: none; font-weight: bold; }
     section { padding: 40px 20px; max-width: 1000px; margin: auto; }
     h2 { color: #1e293b; }
-    .projects, .skills { display: flex; flex-wrap: wrap; gap: 20px; }
-    .card { border: 1px solid #ccc; padding: 15px; border-radius: 8px; flex: 1 1 calc(50% - 40px); }
+    .projects, .skills, .certificates { display: flex; flex-wrap: wrap; gap: 20px; }
+    .card { border: 1px solid #ccc; padding: 15px; border-radius: 8px; flex: 1 1 calc(50% - 40px); background-color: #f9f9f9; }
     .lang-toggle { float: right; margin-top: -40px; margin-right: 20px; }
+    a.button { background: #1e293b; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 10px; }
   </style>
 </head>
 <body>
@@ -27,6 +27,7 @@
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
       <a href="#cv">CV</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -46,6 +47,11 @@
         <p>Graduation project focused on designing a smart elevator using Arduino with sensor integration and control logic.</p>
         <p>مشروع التخرج لتصميم مصعد ذكي باستخدام الأردوينو ودمج الحساسات وبرمجة التحكم.</p>
       </div>
+      <div class="card">
+        <h3>Office Lighting & Power Layout</h3>
+        <p>Designed lighting and socket layout using AutoCAD and Dialux for a multi-room office building.</p>
+        <p>تصميم إضاءة وأفياش لمبنى إداري باستخدام أوتوكاد وDialux.</p>
+      </div>
     </div>
   </section>
 
@@ -57,20 +63,38 @@
         <ul>
           <li>AutoCAD, ETAP, Dialux EVO, Excel</li>
           <li>SCADA, PLC, HMI</li>
+          <li>Basic SketchUp & Revit (learning)</li>
         </ul>
       </div>
       <div class="card">
         <h4>Soft Skills</h4>
         <ul>
           <li>Teamwork, Time Management, Problem Solving</li>
+          <li>Technical Reporting, Self-learning</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <h2>Certificates / الشهادات</h2>
+    <div class="certificates">
+      <div class="card">
+        <h4>Electrical Distribution Course</h4>
+        <p>Training on lighting, power layouts, panels, cables, and UPS fundamentals.</p>
+        <p>تدريب على التوزيع الكهربائي وتصميم اللوحات والكابلات والـ UPS.</p>
+      </div>
+      <div class="card">
+        <h4>Industrial Automation Workshop</h4>
+        <p>Hands-on PLC, HMI, and SCADA basics.</p>
+        <p>ورشة تطبيقية على PLC وHMI وأنظمة SCADA.</p>
       </div>
     </div>
   </section>
 
   <section id="cv">
     <h2>CV</h2>
-    <p><a href="#">Download My CV (PDF)</a></p>
+    <a class="button" href="#">Download My CV (PDF)</a>
   </section>
 
   <section id="contact">
